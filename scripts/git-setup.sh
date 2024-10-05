@@ -7,3 +7,4 @@ git config --global alias.unstage "restore --staged"
 git config --global alias.ck "checkout"
 git config --global alias.goto "!git branch -D $1; git checkout $1"
 git config --global alias.diff-staged "diff --staged"
+
