@@ -8,3 +8,4 @@ git config --global alias.ck "checkout"
 git config --global alias.goto '!f() { git checkout origin/"$1" && (git branch -D "$1" 2>/dev/null || true) && git checkout "$1"; }; f'
 git config --global alias.diff-staged "diff --staged"
 git config --global alias.cp 'cherry-pick'
+git config --global alias.new-tag '!f() { (git tag -d "$1" 2>/dev/null || true) ; (git push --delete origin "$1" 2>/dev/null || true) ; git tag "$1" ; git push origin "$1"; }; f'
